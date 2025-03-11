@@ -25,8 +25,7 @@ jobs:
         run: flutter build ios --no-codesign
 
       - name: Upload iOS Build Artifact
-	uses: actions/upload-artifact@v4
- 	with:
-    	  name: ios-build
-    	  path: build/ios/iphoneos
-
+        uses: actions/upload-artifact@v4  # ✅ إصلاح المسافات هنا
+        with:
+          name: ios-build
+          path: build/ios/iphoneos
